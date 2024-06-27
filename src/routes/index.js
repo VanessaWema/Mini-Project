@@ -1,5 +1,7 @@
+import {createRouter, createWebHistory} from 'vue router'
+
 import Homepage from "./../components/Homepage.vue"
-import Recipe from "../components/Menu.vue"
+import Menu from "../components/Menu.vue"
 import AboutUs from "./../components/AboutUs.vue"
 import ContactUs from "./../components/ContactUs.vue"
 const routes = [
@@ -9,9 +11,9 @@ const routes = [
       component: Homepage,
     },
     {
-        path: '/recipe',
-        name: 'recipe',
-        component: Recipe,
+        path: '/menu',
+        name: 'menu',
+        component: Menu,
       },
       {
         path: '/about',
@@ -26,9 +28,9 @@ const routes = [
      
       
       ]
-const router = createRouter({
-  history: createWebHistory(),
-  routes, 
+const router = new VueRouter({
+  mode:'history',
+  routes,
 })
 
 export default router

@@ -5,13 +5,13 @@
   </template>
 
   <v-app-bar-title>ReciFood</v-app-bar-title>
+
   
+   <v-btn to="/"  primary >Home</v-btn>
   
-  <v-btn to="/"  primary >Home</v-btn>
-  
-  <v-btn to="/recipe">Recipe</v-btn>
+  <v-btn to="/menu">Menu</v-btn>
   <v-btn to="/aboutus">About Us</v-btn>
   <v-btn to="/contactus">Contact Us</v-btn>
   
 </v-app-bar>
-<template/>
+</template>

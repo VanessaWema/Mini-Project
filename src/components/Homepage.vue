@@ -11,14 +11,14 @@
                   itemName : "Pizza",
                   itemPrice : 5,
                   itemQuantity : 30,
-                  itemImage: '../images/customerbox-aXq1oCCjlVM-unsplash.jpg'
+                  itemImage: '../images/pablo-pacheco-D3Mag4BKqns-unsplash.jpg'
               },
               {
                   itemNumber: 27466,
                   itemName : "French Fries",
                   itemPrice : 10,
                   itemQuantity : 4,
-                  itemImage: '../images/jamie-albright-AHF_ZktTL6Q-unsplash.jpg'
+                  itemImage: '../images/louis-hansel-vi0kZuoe0-8-unsplash.jpg'
               }
           ],
         }
@@ -47,12 +47,12 @@
         ></v-carousel-item>
 
   <v-carousel-item
-    src="../images/customerbox-aXq1oCCjlVM-unsplash.jpg"
+    src="../images/pablo-pacheco-D3Mag4BKqns-unsplash.jpg"
     cover
   ></v-carousel-item>
 
   <v-carousel-item
-    src="../images/jamie-albright-AHF_ZktTL6Q-unsplash.jpg"
+    src="../images/louis-hansel-vi0kZuoe0-8-unsplash.jpg"
     cover
   ></v-carousel-item>
 </v-carousel>
