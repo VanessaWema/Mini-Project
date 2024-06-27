@@ -11,7 +11,7 @@
   
   <v-btn to="/menu">Menu</v-btn>
   <v-btn to="/aboutus">About Us</v-btn>
-  <v-btn to="/contactus">Contact Us</v-btn>
-  
+  <v-btn to="/cart">Cart</v-btn>
+
 </v-app-bar>
 </template>

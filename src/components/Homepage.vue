@@ -3,7 +3,7 @@
   export default {
     data() {
       return {
-          image: '../images/vinicius-amnx-amano-dbOV1qSiL-c-unsplash.jpg',
+          image: '../images/tyson-UmkODKl4E1M-unsplash.jpg',
           url: 'https://www.vuejs.org/',
           stockDetails : [
               {
@@ -42,7 +42,7 @@
 
     <v-carousel>
         <v-carousel-item
-            src="../images/vinicius-amnx-amano-dbOV1qSiL-c-unsplash.jpg"
+            src="../images/tyson-UmkODKl4E1M-unsplash.jpg"
             cover
         ></v-carousel-item>
 

@@ -3,7 +3,7 @@ import {createRouter, createWebHistory} from 'vue router'
 import Homepage from "./../components/Homepage.vue"
 import Menu from "../components/Menu.vue"
 import AboutUs from "./../components/AboutUs.vue"
-import ContactUs from "./../components/ContactUs.vue"
+import Cart from "./../components/Cart.vue"
 const routes = [
     {
       path: '/',
@@ -21,15 +21,15 @@ const routes = [
         component: AboutUs,
       },
       {
-        path: '/contact',
-        name: 'contact',
-        component: ContactUs,
+        path: '/cart',
+        name: 'cart',
+        component: Cart,
       },
      
       
       ]
-const router = new VueRouter({
-  mode:'history',
+const router = createRouter({
+  history: createWebHistory(),
   routes,
 })
 
