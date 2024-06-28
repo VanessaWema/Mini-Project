@@ -35,6 +35,7 @@
 </script>
 
 <template>
+
 <v-card
     class="mx-auto"
     width="1000"
@@ -58,9 +59,10 @@
 </v-carousel>
   </v-card>
   <v-spacer></v-spacer>
+
   <v-card align="center">
         <v-card-item>
-          <v-card-title>Welcome to the Camel Candy Shop</v-card-title>
+          <v-card-title>Welcome to ReciFood</v-card-title>
 
           <v-card-subtitle>This is your one stop shop for candies, sweets, chocolates, and so much more </v-card-subtitle>
         </v-card-item>

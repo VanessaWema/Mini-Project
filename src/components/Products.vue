@@ -1,20 +1,10 @@
 <template>
-    <h1>cart</h1>
-    <v-card
-        class="mx-auto"
-        width="800"
-        >
-            <v-card-title>Cart
-                {{ total }}
-                <v-btn
-                color="deep_purple-lighten-2"
-                text="Checkout"
-                ></v-btn>
-                </v-card-title>
-        <v-card-text class="bg-surface-light pt-4">
+    <h1>Confectionery</h1>
+    
 
-                <v-row>
-        <v-col cols="12" md="4"  v-for="product in cartItems" :key=product>     
+    <div>
+        <v-row>
+        <v-col cols="12" md="4"  v-for="product in stock" :key=product>     
             <v-card
                 class="mx-auto my-12"
                 max-width="374"
@@ -38,19 +28,17 @@
                 <v-card-actions>
                     <v-btn
                         color="deep-purple-lighten-2"
-                        text="Remove"
+                        text="Add to Cart"
                         block
                         border
-                        @click="removeFromCart(product)"
+                        @click="addToCart(product)"
                     ></v-btn>
                 </v-card-actions>
             </v-card>
         </v-col>
         </v-row>
-                
-    </v-card-text>
-        
-    </v-card>
+    </div>
+
 </template>
 <script>
 import { mapActions, mapGetters } from 'vuex'
@@ -61,12 +49,12 @@ export default {
             products: [1,2,3,4,5,6,7,8,9,10],
             stockDetails : [
             {
-            itemNumber: 1,
+                itemNumber: 1,
                 itemName : "Pizza",
                 itemPrice : 5,
                 itemQuantity : 30,
                 itemImage: '../images/pablo-pacheco-D3Mag4BKqns-unsplash.jpg',
-                description: "Our sweets are wonderfully crafted by the best ingrdients to bring deliciousness to your parties"
+                description: "Our food is made to your liking"
             },
             {
                 itemNumber: 27466,
@@ -74,7 +62,7 @@ export default {
                 itemPrice : 10,
                 itemQuantity : 4,
                 itemImage: '../images/louis-hansel-vi0kZuoe0-8-unsplash.jpg',
-                description: "Our sweets are wonderfully crafted by the best ingrdients to bring deliciousness to your parties"
+                description: "Our food is made to your liking"
 
             }
             ,
@@ -84,7 +72,7 @@ export default {
                 itemPrice : 10,
                 itemQuantity : 4,
                 itemImage: '../images/jed-owen-tZwcwRw6x1c-unsplash.jpg',
-                description: "Our sweets are wonderfully crafted by the best ingrdients to bring deliciousness to your parties"
+                description: "Our food is made to your liking"
 
             }
             ,
@@ -94,8 +82,7 @@ export default {
                 itemPrice : 10,
                 itemQuantity : 4,
                 itemImage: '../images/jose-ignacio-pompe-s-Z-h0fEiBM-unsplash.jpg',
-                description: "Our sweets are wonderfully crafted by the best ingredients to bring deliciousness to your parties"
-
+                description: "Our food is made to your liking"
             }
             ,
             {
@@ -104,7 +91,7 @@ export default {
                 itemPe5rrice : 10,
                 itemQuantity : 4,
                 itemImage: '../images/bruna-branco-t8hTmte4O_g-unsplash.jpg',
-                description: "Our food are wonderfully crafted by the best ingrdients to bring deliciousness to your parties"
+                description: "Our food is made to your liking"
 
             }
             ,
@@ -114,7 +101,7 @@ export default {
                 itemPrice : 10,
                 itemQuantity : 4,
                 itemImage: '../images/nizar-zulmi-UgckYUoc0tM-unsplash.jpg',
-                description: "Our sweets are wonderfully crafted by the best ingrdients to bring deliciousness to your parties"
+                description: "Our food is made to your liking" 
 
             }
             ,
@@ -124,7 +111,7 @@ export default {
                 itemPrice : 10,
                 itemQuantity : 4,
                 itemImage: '../images/farhad-ibrahimzade-HU_ubYnwElc-unsplash.jpg',
-                description: "Our sweets are wonderfully crafted by the best ingrdients to bring deliciousness to your parties"
+                description: "Our food is made to your liking"
 
             },
             {
@@ -133,7 +120,7 @@ export default {
                 itemPrice : 10,
                 itemQuantity : 4,
                 itemImage: '../images/knight-duong-U0_cV29xqp8-unsplash.jpg',
-                description: "Our sweets are wonderfully crafted by the best ingrdients to bring deliciousness to your parties"
+                description:  "Our food is made to your liking"
 
             }
             ,
@@ -146,21 +133,18 @@ export default {
         cartItems:[],
         }
     },
-    methods: {
-        ...mapActions([
-            "removeFromCart"
-        ])
+    methods:{
+       ...mapActions([
+        "addToCart"
+       ])
         
-        
+
 },
 computed: {
     ...mapGetters({
-        cartItems: 'cart',
-        total: 'totalCartAmount'
+        stock: 'stock'
 
     })
-}
+},
 }
 </script>
-
-            

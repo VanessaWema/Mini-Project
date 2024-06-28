@@ -1,53 +1,5 @@
-<template>
-    <h1>Confectionery</h1>
-    <p>{{ total }}</p>
-
-    <div>
-        <v-row>
-        <v-col cols="12" md="4"  v-for="menu in stockDetails" :key=menu>     
-            <v-card
-                class="mx-auto my-12"
-                max-width="374"
-            >
-                <v-img
-                    height="250"
-                    :src="menu.itemImage"
-                    cover
-                ></v-img>
-
-                <v-card-item>
-                    <v-card-title>{{menu.itemName}}</v-card-title>
-                </v-card-item>
-
-                <v-card-text>
-                    <div class="my-4 text-subtitle-1">{{menu.itemPrice}}</div>
-                    <div>{{ menu.description }}</div>
-                </v-card-text>
-
-                <v-divider class="mx-4 mb-1"></v-divider>
-                <v-card-actions>
-                    <v-btn
-                        color="deep-purple-lighten-2"
-                        text="Add to Cart"
-                        block
-                        border
-                        @click="addToCart(melt-in-your-mouth)"
-                    ></v-btn>
-                </v-card-actions>
-            </v-card>
-        </v-col>
-        </v-row>
-    </div>
-
-</template>
-<script>
-import { mapActions, mapGetters } from 'vuex'
-
-export default {
-    data(){
-        return{
-            products: [1,2,3,4,5,6,7,8,9,10],
-            stockDetails : [
+const state = {
+        stockDetails : [
             {
                 itemNumber: 1,
                 itemName : "Pizza",
@@ -123,36 +75,21 @@ export default {
                 description:  "Our food is made to your liking"
 
             }
-            ,
-        
-
-            
         ],
-        total:0,
-
-        cartItems:[],
-        }
-    },
-    methods:{
-        calculateTotal(ItemPrice){
-           this.total+=ItemPrice
-        },
-        addToCart(menu){
-            this.cartItems.push(menu)
-            this.calculateTotal(product.itemPrice)
-
-        },
-        removeFromCart(menu){
-            this.cartItems.pop(menu)
-            this.total-=menu.itemPrice
-        }
-
-},
-computed: {
-    ...mapGetters({
-        stock: 'stock'
-
-    })
+        
 }
+const getters= {
+    stock: (state) => state.stockdetails,
 }
-</script>
+const actions = {
+
+}
+const mutations = {
+
+}
+export default {
+    state,
+    getters,
+    actions,
+    mutations
+}
