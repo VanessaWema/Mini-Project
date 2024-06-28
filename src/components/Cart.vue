@@ -1,5 +1,5 @@
 <template>
-    <h1>cart</h1>
+    <h1>Cart</h1>
     <v-card
         class="mx-auto"
         width="800"

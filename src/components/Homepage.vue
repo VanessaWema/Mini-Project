@@ -75,15 +75,15 @@
       <v-divider></v-divider>
       <v-divider></v-divider>
       <v-divider></v-divider>
-      <h3 class="text-center">What our customers say:</h3>
+      <h3 class="text-center">Our Customers' Reviews:</h3>
       <v-divider></v-divider>
       
       <v-row>
     <v-col cols="12" md="4">
       <v-card
         subtitle="Vanessa Wema"
-        text="I loved interacting with the kind staff!"
-        title="Good customer service"
+        text="I always sit in to eat rather than takeout. The place is very clean and well laid out."
+        title="Clean and Friendly"
       ></v-card>
 
     </v-col>
