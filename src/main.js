@@ -1,4 +1,4 @@
-import {createApp} from 'vue'
+import { createApp } from 'vue'
 import App from './App.vue'
 
 import router from './routes'
@@ -16,8 +16,4 @@ const vuetify = createVuetify({
 
 })
 
-createApp(App)
-.use(router)
-.use(vuetify)
-.use(store)
-.mount('#app') //use store
+createApp(App).use(router).use(vuetify).use(store).mount('#app')

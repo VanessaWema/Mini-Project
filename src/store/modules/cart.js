@@ -1,7 +1,7 @@
-const state = [
-    cartItems = [],
-    totalCartAmount = 0
-]
+const state = {
+    cartItems : [],
+    totalCartAmount : 0
+}
 const getters = {
     cart: (state) => state.cartItems,
     totalCartAmount: (state) =>state.totalcartAmount

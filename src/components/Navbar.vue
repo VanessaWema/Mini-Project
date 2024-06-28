@@ -1,5 +1,5 @@
 <template>
-    <v-app-bar :elevation="2" color = "purple">
+    <v-app-bar :elevation="2" color = "green">
   
  <v-app-bar-title>ReciFood</v-app-bar-title>
 
@@ -20,6 +20,7 @@
 import {mapGetters} from 'vuex'
 
 export default {
+  
   computed: { 
     ...mapGetters({
       cart: 'cart'

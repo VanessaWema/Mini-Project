@@ -1,10 +1,10 @@
 <template>
-    <h1>Confectionery</h1>
-    
+    <h1>Explore Our Menu</h1>
+    <p>{{ total }}</p>
 
     <div>
         <v-row>
-        <v-col cols="12" md="4"  v-for="product in stock" :key=product>     
+        <v-col cols="12" md="4"  v-for="product in stockDetails" :key=product>     
             <v-card
                 class="mx-auto my-12"
                 max-width="374"
@@ -27,7 +27,7 @@
                 <v-divider class="mx-4 mb-1"></v-divider>
                 <v-card-actions>
                     <v-btn
-                        color="deep-purple-lighten-2"
+                        color="green"
                         text="Add to Cart"
                         block
                         border
@@ -88,7 +88,7 @@ export default {
             {
                 itemNumber: 27466,
                 itemName : "Pasta",
-                itemPe5rrice : 10,
+                itemPrice : 10,
                 itemQuantity : 4,
                 itemImage: '../images/bruna-branco-t8hTmte4O_g-unsplash.jpg',
                 description: "Our food is made to your liking"
@@ -116,7 +116,7 @@ export default {
             },
             {
                 itemNumber: 27466,
-                itemName : "Milkshake",
+                itemName : "Milkshakes",
                 itemPrice : 10,
                 itemQuantity : 4,
                 itemImage: '../images/knight-duong-U0_cV29xqp8-unsplash.jpg',
