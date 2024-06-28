@@ -1,6 +1,6 @@
 const state = [
-    cartItems, [],
-    totalCartAmount, 0
+    cartItems = [],
+    totalCartAmount = 0
 ]
 const getters = {
     cart: (state) => state.cartItems,
